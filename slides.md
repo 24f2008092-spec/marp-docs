@@ -45,7 +45,9 @@ This presentation explains the v2.1 API upgrade.
 
 ---
 
-# Core Feature: Real-Time Data Streaming
+<!-- _backgroundColor: #E8F6FF -->
+
+# Core Feature: Real-Time Data Streaming  (Directive Applied ✔️)
 
 | Metric | v2.0 (REST) | v2.1 (Streaming) |
 | :--- | :--- | :--- |
@@ -53,7 +55,7 @@ This presentation explains the v2.1 API upgrade.
 | Overhead | High | Low |
 | Complexity | Simple | Moderate |
 
-<footer class="footer-email">Slide 2 — 24f2008092@ds.study.iitm.ac.in</footer>
+<footer class="footer-email">Slide 2 — Directive ✔️</footer>
 
 ---
 
@@ -67,7 +69,7 @@ Containerized deployment model:
 - Kubernetes for orchestration  
 - Helm for versioning  
 
-<footer class="footer-email">Slide 3 — Background Image ✔️</footer>
+<footer class="footer-email">Slide 3 — Background ✔️</footer>
 
 ---
 

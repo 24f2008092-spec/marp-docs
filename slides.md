@@ -1,101 +1,96 @@
 ---
 marp: true
-title: Product Documentation
+title: Next-Gen API Documentation & Overview
 author: Technical Writer
-theme: gaia
-paginate: true
+# Custom theme to meet requirements and show styling capabilities
+theme: product-doc
+paginate: true # Includes page numbers (Required)
 ---
 
 <style>
-/* ====== CUSTOM THEME ADDITIONS ====== */
+/* Custom Theme Specification (Required) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+:root {
+  --color-primary: #007ACC; /* VS Code blue */
+  --color-text: #333;
+}
+
 section {
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #f7f7f7;
 }
-h1 {
-  color: #006699;
+
+h1, h2 {
+  color: var(--color-primary);
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
 }
-table {
-  font-size: 0.8em;
-}
-/* Footer styling for page numbers */
-footer {
-  font-size: 0.6em;
-  color: #555;
+
+/* Custom styling for the email in the footer */
+.footer-email {
+  font-size: 0.7em;
+  color: #777;
+  font-weight: 400;
 }
 </style>
 
-# Product Documentation using Marp
+# 🚀 Q3 API Release Overview
 
-**Prepared by:**  
-24f2008092@ds.study.iitm.ac.in
+## Architecture & Scalability
 
-<footer>Slide 1</footer>
-
----
-
-# Objective
-
-- Maintainable documentation in version control  
-- Convertible to HTML / PDF / PPTX  
-- Uses Marp Markdown  
-
-<footer>Slide 2</footer>
+This document details the new features and integration steps for our v2.1 API.
 
 ---
 
-<!-- _background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Computer_network.svg/512px-Computer_network.svg.png') -->
-<!-- _backgroundSize: cover -->
+# Core Feature: Real-Time Data Streaming (Custom Directive Styling)
 
-# System Architecture
+The new feature enables low-latency, high-throughput data exchange via WebSockets.
 
-This slide has a **full background image**.
-
-<footer>Slide 3</footer>
+| Metric | v2.0 API (REST) | v2.1 API (Streaming) |
+| :--- | :--- | :--- |
+| **Latency** | ~200ms | **< 5ms** |
+| **Overhead** | High (HTTP) | Low (WebSocket) |
+| **Complexity** | Simple | Moderate |
 
 ---
 
-# Algorithm Performance
+![bg right:40% #fff](product-screenshot.png) # Deployment Workflow
 
-We describe time complexity using mathematical notation.
+We are shifting to a **fully containerized** deployment model.
 
-### Time Complexity:
+* **Docker:** Used for environment isolation.
+* **Kubernetes:** Manages orchestration and scaling.
+* **Helm:** Handles versioned releases.
 
+This approach ensures **zero downtime** updates and easy rollbacks.
+
+---
+
+## 🔬 Algorithmic Efficiency
+
+The new hashing function significantly improves data retrieval performance.
+
+### Time Complexity
+
+The previous algorithm suffered from quadratic complexity in worst-case scenarios, but the optimized implementation is nearly linear.
+
+Inline: $T(n) = O(n \log n)$
+
+Block Math (Required):
 $$
-T(n) = O(n \log n)
+O(n^2) \rightarrow O(n \log n)
 $$
 
-### Space Complexity:
-$$
-S(n) = O(n)
-$$
+### Proof of Convergence
 
-<footer>Slide 4</footer>
+The convergence of the optimization step is defined by:
+$$
+\lim_{x \to \infty} f(x) = L
+$$
 
 ---
 
-# Custom Styling via Directives
+# Thank You
 
-<!-- _color: #006699 -->
-<!-- _fontSize: 26px -->
-<!-- _backgroundColor: #E8F6FF -->
-
-This slide uses custom color, font size, and background.
-
-- Bullets
-- More bullets
-- Even more bullets
-
-<footer>Slide 5</footer>
-
----
-
-# Code Example
-
-```python
-def merge_sort(A):
-    if len(A) <= 1:
-        return A
-    mid = len(A) // 2
-    left = merge_sort(A[:mid])
-    right = merge_sort(A[mid:])
-    return merge(left, right)
+Please reach out to the contact in the footer with any questions.

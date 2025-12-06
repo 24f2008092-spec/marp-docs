@@ -2,16 +2,17 @@
 marp: true
 title: Next-Gen API Documentation & Overview
 author: Technical Writer
+# Custom theme to meet requirements and show styling capabilities
 theme: product-doc
-paginate: true
+paginate: true # Includes page numbers (Required)
 ---
 
 <style>
-/* Custom Theme Specification */
+/* Custom Theme Specification (Required) */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
 :root {
-  --color-primary: #007ACC;
+  --color-primary: #007ACC; /* VS Code blue */
   --color-text: #333;
 }
 
@@ -26,6 +27,7 @@ h1, h2 {
   padding-bottom: 5px;
 }
 
+/* Custom styling for the email in the footer */
 .footer-email {
   font-size: 0.7em;
   color: #777;
@@ -37,72 +39,60 @@ h1, h2 {
 
 ## Architecture & Scalability
 
-This presentation explains the v2.1 API upgrade.
-
-📩 Contact: **24f2008092@ds.study.iitm.ac.in**
-
-<footer class="footer-email">Slide 1 — 24f2008092@ds.study.iitm.ac.in</footer>
+This document details the new features and integration steps for our v2.1 API.
 
 ---
 
-<!-- _backgroundColor: #E8F6FF -->
+# Core Feature: Real-Time Data Streaming (Custom Directive Styling)
 
-# Core Feature: Real-Time Data Streaming  (Directive Applied ✔️)
+The new feature enables low-latency, high-throughput data exchange via WebSockets.
 
-| Metric | v2.0 (REST) | v2.1 (Streaming) |
+| Metric | v2.0 API (REST) | v2.1 API (Streaming) |
 | :--- | :--- | :--- |
-| Latency | ~200ms | **< 5ms** |
-| Overhead | High | Low |
-| Complexity | Simple | Moderate |
-
-<footer class="footer-email">Slide 2 — Directive ✔️</footer>
+| **Latency** | ~200ms | **< 5ms** |
+| **Overhead** | High (HTTP) | Low (WebSocket) |
+| **Complexity** | Simple | Moderate |
 
 ---
 
-![bg cover](https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Computer_network.svg/512px-Computer_network.svg.png)
+![bg right:40% #fff](product-screenshot.png) # Deployment Workflow
 
-# Deployment Workflow (Background Verified)
+### **Action Required:** Place an image named `product-screenshot.png` in the same directory as this file for the background image to render.
 
-Containerized deployment model:
+We are shifting to a **fully containerized** deployment model.
 
-- Docker for isolation  
-- Kubernetes for orchestration  
-- Helm for versioning  
+* **Docker:** Used for environment isolation.
+* **Kubernetes:** Manages orchestration and scaling.
+* **Helm:** Handles versioned releases.
 
-<footer class="footer-email">Slide 3 — Background ✔️</footer>
+This approach ensures **zero downtime** updates and easy rollbacks.
 
 ---
 
 ## 🔬 Algorithmic Efficiency
 
-Optimal hashing reduces lookup time.
+The new hashing function significantly improves data retrieval performance.
 
-### Mathematical Complexity:
+### Time Complexity
+
+The previous algorithm suffered from quadratic complexity in worst-case scenarios, but the optimized implementation is nearly linear.
+
+Inline: $T(n) = O(n \log n)$
+
+Block Math (Required):
 $$
-O(n^2) \longrightarrow O(n \log n)
+O(n^2) \rightarrow O(n \log n)
 $$
 
-Inline:
-$T(n) = O(n \log n)$
+### Proof of Convergence
 
-<footer class="footer-email">Slide 4 — Math ✔️</footer>
-
----
-
-# Convergence Proof
-
+The convergence of the optimization step is defined by:
 $$
 \lim_{x \to \infty} f(x) = L
 $$
 
-<footer class="footer-email">Slide 5 — Math ✔️</footer>
-
 ---
 
-# 📬 Thank You
+# Thank You
 
-For questions, contact:
-
-📩 **24f2008092@ds.study.iitm.ac.in**
-
-<footer class="footer-email">Slide 6 — Contact ✔️</footer>
+Please reach out to the contact in the footer with any questions.

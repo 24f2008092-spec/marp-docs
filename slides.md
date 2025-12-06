@@ -25,6 +25,7 @@ h1, h2 {
   border-bottom: 2px solid #ddd;
   padding-bottom: 5px;
 }
+
 .footer-email {
   font-size: 0.7em;
   color: #777;
@@ -56,16 +57,15 @@ This presentation explains the v2.1 API upgrade.
 
 ---
 
-_background: https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Computer_network.svg/512px-Computer_network.svg.png
-_backgroundSize: cover
+![bg cover](https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Computer_network.svg/512px-Computer_network.svg.png)
 
-# Deployment Workflow (Background Image ✔️)
+# Deployment Workflow (Background Verified)
 
-We are shifting to containerized deployments:
+Containerized deployment model:
 
 - Docker for isolation  
 - Kubernetes for orchestration  
-- Helm for versioning
+- Helm for versioning  
 
 <footer class="footer-email">Slide 3 — Background Image ✔️</footer>
 
@@ -75,7 +75,7 @@ We are shifting to containerized deployments:
 
 Optimal hashing reduces lookup time.
 
-### True Efficiency:
+### Mathematical Complexity:
 $$
 O(n^2) \longrightarrow O(n \log n)
 $$
@@ -87,7 +87,7 @@ $T(n) = O(n \log n)$
 
 ---
 
-# Convergence Proof (Math Slide)
+# Convergence Proof
 
 $$
 \lim_{x \to \infty} f(x) = L
@@ -99,7 +99,7 @@ $$
 
 # 📬 Thank You
 
-For any queries reach out:
+For questions, contact:
 
 📩 **24f2008092@ds.study.iitm.ac.in**
 

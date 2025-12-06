@@ -2,17 +2,16 @@
 marp: true
 title: Next-Gen API Documentation & Overview
 author: Technical Writer
-# Custom theme to meet requirements and show styling capabilities
 theme: product-doc
-paginate: true # Includes page numbers (Required)
+paginate: true
 ---
 
 <style>
-/* Custom Theme Specification (Required) */
+/* Custom Theme Specification */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
 :root {
-  --color-primary: #007ACC; /* VS Code blue */
+  --color-primary: #007ACC;
   --color-text: #333;
 }
 
@@ -26,8 +25,6 @@ h1, h2 {
   border-bottom: 2px solid #ddd;
   padding-bottom: 5px;
 }
-
-/* Custom styling for the email in the footer */
 .footer-email {
   font-size: 0.7em;
   color: #777;
@@ -39,58 +36,71 @@ h1, h2 {
 
 ## Architecture & Scalability
 
-This document details the new features and integration steps for our v2.1 API.
+This presentation explains the v2.1 API upgrade.
+
+📩 Contact: **24f2008092@ds.study.iitm.ac.in**
+
+<footer class="footer-email">Slide 1 — 24f2008092@ds.study.iitm.ac.in</footer>
 
 ---
 
-# Core Feature: Real-Time Data Streaming (Custom Directive Styling)
+# Core Feature: Real-Time Data Streaming
 
-The new feature enables low-latency, high-throughput data exchange via WebSockets.
-
-| Metric | v2.0 API (REST) | v2.1 API (Streaming) |
+| Metric | v2.0 (REST) | v2.1 (Streaming) |
 | :--- | :--- | :--- |
-| **Latency** | ~200ms | **< 5ms** |
-| **Overhead** | High (HTTP) | Low (WebSocket) |
-| **Complexity** | Simple | Moderate |
+| Latency | ~200ms | **< 5ms** |
+| Overhead | High | Low |
+| Complexity | Simple | Moderate |
+
+<footer class="footer-email">Slide 2 — 24f2008092@ds.study.iitm.ac.in</footer>
 
 ---
 
-![bg right:40% #fff](product-screenshot.png) # Deployment Workflow
+_background: https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Computer_network.svg/512px-Computer_network.svg.png
+_backgroundSize: cover
 
-We are shifting to a **fully containerized** deployment model.
+# Deployment Workflow (Background Image ✔️)
 
-* **Docker:** Used for environment isolation.
-* **Kubernetes:** Manages orchestration and scaling.
-* **Helm:** Handles versioned releases.
+We are shifting to containerized deployments:
 
-This approach ensures **zero downtime** updates and easy rollbacks.
+- Docker for isolation  
+- Kubernetes for orchestration  
+- Helm for versioning
+
+<footer class="footer-email">Slide 3 — Background Image ✔️</footer>
 
 ---
 
 ## 🔬 Algorithmic Efficiency
 
-The new hashing function significantly improves data retrieval performance.
+Optimal hashing reduces lookup time.
 
-### Time Complexity
-
-The previous algorithm suffered from quadratic complexity in worst-case scenarios, but the optimized implementation is nearly linear.
-
-Inline: $T(n) = O(n \log n)$
-
-Block Math (Required):
+### True Efficiency:
 $$
-O(n^2) \rightarrow O(n \log n)
+O(n^2) \longrightarrow O(n \log n)
 $$
 
-### Proof of Convergence
+Inline:
+$T(n) = O(n \log n)$
 
-The convergence of the optimization step is defined by:
+<footer class="footer-email">Slide 4 — Math ✔️</footer>
+
+---
+
+# Convergence Proof (Math Slide)
+
 $$
 \lim_{x \to \infty} f(x) = L
 $$
 
+<footer class="footer-email">Slide 5 — Math ✔️</footer>
+
 ---
 
-# Thank You
+# 📬 Thank You
 
-Please reach out to the contact in the footer with any questions.
+For any queries reach out:
+
+📩 **24f2008092@ds.study.iitm.ac.in**
+
+<footer class="footer-email">Slide 6 — Contact ✔️</footer>
